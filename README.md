@@ -82,3 +82,49 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. 
 
 By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
+
+
+
+## Code
+
+The code can be implemented using MATLAB R2022b or any later releases, and is organized as follows :
+
+### Directory tree
+<pre>
+[root directory]
+├── code
+|   ├── main.m
+|   ├── Linearize_Quad.m
+|   ├── f_Runga_Kutta.m
+|   ├── System_Parameters.m
+    ...
+|   ├── 
+    └── u_saturation.m
+├── data
+...
+└── requirements.txt
+<!--  Readme.md -->
+</pre>
+
+File | Purpose
+--- | --- 
+**main** | Main Launcher file
+**Linearize_Quad** | Linearization and computation of state and control jacobians
+**f_Runga_Kutta** | 4-th order numerical solver for **f(x_k,u_k)**
+**System_Parameters** | Upload all relevant system parameters
+**u_saturation** | Actuation physical limitations
+
+
+## Citation
+
+The authors would appreciate users giving stars to this repository and citing our article as follows:
+```
+@article{engelsman2026revisiting,
+  title={Revisiting Certainty Equivalence: The Structural Coupling Between Estimation and Control in Underactuated Nonlinear Systems},
+  author={Engelsman, Daniel and Klein, Itzik},
+  journal={arXiv preprint arXiv:2607.07276},
+  year={2026}
+}
+```
+
+[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=70/>](https://arxiv.org/abs/2607.07276)
