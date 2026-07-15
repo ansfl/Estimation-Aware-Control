@@ -1,3 +1,5 @@
+&nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  <img src="data/Logo.png" width="700" class='center'/>
+
 # Estimation-Aware Control
 
 ### Introduction
@@ -6,7 +8,7 @@ Traditional control architectures rely heavily on the **Certainty Equivalence (C
 Our framework abandons the "blind" CE assumption. By actively incorporating estimation quality (uncertainty) directly into the feedback law, we structurally isolate estimation-induced feedback loops. This mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
 
 <p align="center">
-  <img src="data/Quad_Chase.gif" width="700" alt="Quadrotor Chase Simulation" />
+  <img src="data/Quad_Chase.gif" width="700" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
 ---
@@ -64,13 +66,13 @@ This fundamental challenge persists even when we introduce standard feedback con
 In demanding scenarios, traditional feedback struggles, leading to highly degraded control performance or outright instability:
 
 <p align="center">
-  <img src="data/Pend_unstable.gif" width="700" alt="Unstable Pendulum Feedback Control" />
+  <img src="data/Pend_unstable.gif" width="700" class='center' alt="Unstable Pendulum Feedback Control" />
 </p>
 
 Achieving marginal stability under these conditions is notoriously difficult. It often demands restrictive workarounds, such as forcing higher sampling rates, increasing control loop bandwidth, or relying on fragile, ad-hoc manual weight tuning:
 
 <p align="center">
-  <img src="data/Pend_stable.gif" width="700" alt="Marginally Stable Heavily Tuned Feedback Control" />
+  <img src="data/Pend_stable.gif" width="700" class='center' alt="Marginally Stable Heavily Tuned Feedback Control" />
 </p>
 
 ---
