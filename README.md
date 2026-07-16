@@ -40,7 +40,7 @@ In reality, however, a naive predictive model fails to accurately capture the tr
 2. **Noisiness:** Real-world systems suffer from both process noise (unmodeled physical disturbances) and measurement noise (inherent sensor inaccuracies). Without feedback correction, these errors accumulate and compound over time.
 3. **Undersampling & Discretization:** Physical microcontrollers operate on discrete time steps. Integrating continuous-time physics at discrete intervals introduces truncation errors, which can destabilize a purely predictive controller.
 
-As shown below, when we introduce these real-world stochastic effects, the actual states quickly drift away from our deterministic predictions:
+When these are taken into account, drift becomes inevitable, as the estimates fail to accurately capture the true system states:
 
 <table align="center">
   <tr>
