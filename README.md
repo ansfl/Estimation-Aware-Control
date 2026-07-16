@@ -59,7 +59,7 @@ When these are taken into account, drift becomes inevitable, as the estimates fa
 
 ---
 
-### The Limits of Standard Feedback Control
+### Does Standard Feedback Control Helps ?
 
 This fundamental challenge persists even when we introduce standard feedback control to stabilize the system in an upright position. Model inaccuracies, combined with persistent external disturbances, significantly complicate the controller's task. 
 
