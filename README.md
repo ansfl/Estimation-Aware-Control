@@ -8,7 +8,7 @@ Traditional control architectures rely heavily on the **Certainty Equivalence (C
 Our framework abandons the "blind" CE assumption. By actively incorporating estimation quality (uncertainty) directly into the feedback law, we structurally isolate estimation-induced feedback loops. This mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
 
 <p align="center">
-  <img src="data/Quad_Chase_1.gif" width="700" class='center' alt="Quadrotor Chase Simulation" />
+  <img src="data/Quad_Chase_1.gif" width="750" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
 ---
