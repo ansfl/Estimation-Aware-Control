@@ -22,12 +22,12 @@ In an ideal, deterministic world, basic calculus and physics allow us to perfect
 <table align="center">
   <tr>
     <td align="center">
-      <img src="data/SP_Pend_Linear.gif" width="450" alt="Deterministic Pendulum Animation" />
+      <img src="data/SP_Pend_Linear.gif" width="400" alt="Deterministic Pendulum Animation" />
       <br />
       <sub><b>Ideal Pendulum Motion</b></sub>
     </td>
     <td align="center">
-      <img src="data/SP_States-ezgif.gif" width="400" alt="Ideal Phase Portrait" />
+      <img src="data/SP_States-ezgif.gif" width="350" alt="Ideal Phase Portrait" />
       <br />
       <sub><b>Deterministic State Evolution</b></sub>
     </td>
@@ -45,12 +45,12 @@ As shown below, when we introduce these real-world stochastic effects, the actua
 <table align="center">
   <tr>
     <td align="center">
-      <img src="data/SP_Pend_Stoch.gif" width="450" alt="Stochastic Pendulum Animation" />
+      <img src="data/SP_Pend_Stoch.gif" width="400" alt="Stochastic Pendulum Animation" />
       <br />
       <sub><b>Stochastic Pendulum Behavior</b></sub>
     </td>
     <td align="center">
-      <img src="data/SP_States_Stoch.gif" width="400" alt="Stochastic Phase Portrait" />
+      <img src="data/SP_States_Stoch.gif" width="350" alt="Stochastic Phase Portrait" />
       <br />
       <sub><b>Actual vs. Predicted State Drift</b></sub>
     </td>
