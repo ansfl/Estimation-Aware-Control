@@ -77,7 +77,9 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 
 ### The Solution: Estimation-Aware Control
 
-Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. In modern machine learning terms: the control is continuously regularized, forced to respect the inherent estimator "blindness" within the feasible input set. Mathematically speaking :
+Instead of relying on fragile manual tuning, our framework quantifies real-time state estimation drift (via the estimation covariance) and feeds this uncertainty directly back into the control loop. Conceptually, this regularizes the control action, forcing it to respect the estimator's "blindness" within the feasible input space.
+
+Mathematically, the incremental nonlinear dynamic inversion (INDI) control law (1, blue) receives a control increment at step $k$ (2, magenta), which is augmented by our Estimation-Aware (EA) term (3, orange). This term maps the estimator's covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator that dynamically attenuates or cross-projects $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee stability.
 
 <p align="center">
   <img src="data/Fig_Ctrl_Law.png" width="750" class='center' alt="Quadrotor Chase Simulation" />
