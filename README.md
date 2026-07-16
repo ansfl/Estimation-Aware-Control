@@ -5,7 +5,7 @@
 ### Introduction
 Traditional control architectures rely heavily on the **Certainty Equivalence (CE)** principle, which cleanly separates state estimation from control design. While this decoupling works beautifully in ideal linear systems, it quickly breaks down during aggressive maneuvers and under severe disturbances. 
 
-Our framework abandons the "blind" CE assumption. By actively incorporating estimation quality (uncertainty) directly into the feedback law, we structurally isolate estimation-induced feedback loops. This mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
+Our proposed [Estimation-Aware](https://arxiv.org/abs/2607.07276) framework abandons the "blind" CE assumption. By actively incorporating estimation quality (uncertainty) directly into the feedback law, we structurally isolate estimation-induced feedback loops. This mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
 
 <p align="center">
   <img src="data/Quad_Chase_2.gif" width="750" class='center' alt="Quadrotor Chase Simulation" />
@@ -77,7 +77,13 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 
 ### The Solution: Estimation-Aware Control
 
-**This is where Estimation-Aware Control steps in.** Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. In modern machine learning terms: the control is continuously regularized, forced to respect the inherent estimator "blindness" within the feasible input set. By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
+Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. In modern machine learning terms: the control is continuously regularized, forced to respect the inherent estimator "blindness" within the feasible input set. Mathematically speaking :
+
+<p align="center">
+  <img src="data/Fig_Ctrl_Law.png" width="750" class='center' alt="Quadrotor Chase Simulation" />
+</p>
+
+By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
 
 <p align="center">
   <img src="data/Quad_Chase_1.gif" width="750" class='center' alt="Quadrotor Chase Simulation" />
