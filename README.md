@@ -61,9 +61,7 @@ When these are taken into account, drift becomes inevitable, as the estimates fa
 
 ### Does Standard Feedback Control Helps ?
 
-This fundamental challenge persists even when we introduce standard feedback control to stabilize the system in an upright position. Model inaccuracies, combined with persistent external disturbances, significantly complicate the controller's task. 
-
-In demanding scenarios, traditional feedback struggles, leading to highly degraded control performance or outright instability:
+This fundamental challenge persists even when we introduce standard feedback control to stabilize the system in an upright position. Model inaccuracies, combined with persistent external disturbances, significantly complicate the controller's task. In demanding scenarios, traditional feedback struggles, leading to highly degraded control performance or outright instability:
 
 <p align="center">
   <img src="data/Pend_unstable.gif" width="700" class='center' alt="Unstable Pendulum Feedback Control" />
@@ -79,11 +77,7 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 
 ### The Solution: Estimation-Aware Control
 
-**This is where Estimation-Aware Control steps in.** 
-
-Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. 
-
-By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
+**This is where Estimation-Aware Control steps in.** Rather than relying on fragile tuning, our framework continuously quantifies how much our state estimate is drifting (the estimation covariance) and feeds this real-time uncertainty *back* into the control action. In modern machine learning terms: the control is continuously regularized, forced to respect the inherent estimator "blindness" within the feasible input set. By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
 
 
 
@@ -119,7 +113,7 @@ File | Purpose
 
 ## Citation
 
-The authors would appreciate users giving stars to this repository and citing our article as follows:
+If you find this repository useful, please consider giving it a star ⭐ and citing our article (red button below) as follows:
 ```
 @article{engelsman2026revisiting,
   title={Revisiting Certainty Equivalence: The Structural Coupling Between Estimation and Control in Underactuated Nonlinear Systems},
