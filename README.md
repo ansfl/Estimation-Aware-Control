@@ -82,7 +82,7 @@ Instead of relying on fragile manual tuning, our framework quantifies real-time 
 Mathematically, the incremental nonlinear dynamic inversion (INDI) control law (1, blue) receives a control increment at step $k$ (2, magenta), which is augmented by our Estimation-Aware (EA) term (3, orange). This term maps the estimator's covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator that dynamically attenuates or cross-projects $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee stability.
 
 <p align="center">
-  <img src="data/Fig_Ctrl_Law.png" width="750" class='center' alt="Quadrotor Chase Simulation" />
+  <img src="data/Fig_Ctrl_Law.png" width="650" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
 By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
