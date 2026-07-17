@@ -100,9 +100,9 @@ The code can be implemented using MATLAB R2022b or any later releases, and is or
 [root directory]
 ├── code
 |   ├── main.m
-|   ├── Linearize_Quad.m
+|   ├── S_Init.m
+|   ├── S_Solve.m
 |   ├── f_Runga_Kutta.m
-|   ├── System_Parameters.m
     ...
 |   ├── 
     └── u_saturation.m
@@ -115,7 +115,7 @@ The code can be implemented using MATLAB R2022b or any later releases, and is or
 File | Purpose
 --- | --- 
 **main** | Main Launcher file
-**Linearize_Quad** | Linearization and computation of state and control jacobians
+**S_Solve** | Nonlinear incremental solver using state and control jacobians across the moving horzion
 **f_Runga_Kutta** | 4-th order numerical solver for **f(x_k,u_k)**
 **System_Parameters** | Upload all relevant system parameters
 **u_saturation** | Actuation physical limitations
