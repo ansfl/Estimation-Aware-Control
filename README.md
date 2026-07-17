@@ -115,7 +115,7 @@ The code can be implemented using MATLAB R2022b or any later releases, and is or
 File | Purpose
 --- | --- 
 **main** | Main Launcher file
-**S_Solve** | Nonlinear incremental solver using state and control jacobians across the moving horzion
+**S_Solve** | Nonlinear incremental solver using state and control jacobians
 **f_Runga_Kutta** | 4-th order numerical solver for **f(x_k,u_k)**
 **System_Parameters** | Upload all relevant system parameters
 **u_saturation** | Actuation physical limitations
