@@ -123,7 +123,7 @@ File | Purpose
 
 ## Citation
 
-If you find this repository useful, please consider giving it a star ⭐ and citing our article (red button below) as follows:
+If you find this repository useful, please consider giving it a star ⭐ and citing our article :
 ```
 @article{engelsman2026revisiting,
   title={Revisiting Certainty Equivalence: The Structural Coupling Between Estimation and Control in Underactuated Nonlinear Systems},
