@@ -88,7 +88,7 @@ Mathematically, the incremental nonlinear dynamic inversion (INDI) control law (
 By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
 
 <p align="center">
-  <img src="data/Quad_Chase_1.gif" width="800" class='center' alt="Quadrotor Chase Simulation" />
+  <img src="data/Quad_Chase_1.gif" width="850" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
 ## Code
