@@ -8,7 +8,7 @@ Traditional control architectures rely heavily on the **Certainty Equivalence (C
 Our proposed [Estimation-Aware](https://arxiv.org/abs/2607.07276) framework abandons the "blind" CE assumption. By actively embedding estimation quality (uncertainty) directly into the feedback law, we structurally decouple and isolate estimation-induced feedback loops. Compared to the nominal baseline (brown), the EA framework (green) successfully mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
 
 <p align="center">
-  <img src="data/Quad_Chase_2.gif" width="750" class='center' alt="Quadrotor Chase Simulation" />
+  <img src="data/Quad_Chase_2.gif" width="850" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
 ---
