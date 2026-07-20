@@ -76,10 +76,9 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 ---
 
 ### The Solution: Estimation-Aware Control
-
 Rather than relying on manual tuning, our framework feeds real-time estimation uncertainty—quantified via covariance—directly back into the control loop. Agnostic to the control design, this paradigm structurally regularizes the control action to respect the estimator's "blindness" within the feasible space.
 
-In our paper, we consider the incremental nonlinear dynamic inversion (INDI) control law (1, blue) receives a control increment at step $k$ (2, magenta), which is augmented by our Estimation-Aware (EA) term (3, orange). This term maps the estimator's covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator (4, green) that dynamically attenuates or cross-projects $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee stability.
+In this work, we apply this framework to an incremental nonlinear dynamic inversion (INDI) control law (1, blue), which computes a control increment at step $k$ (2, magenta) augmented by our Estimation-Aware (EA) term (3, orange). This term maps the covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator (4, green) that dynamically attenuates or cross-projects $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee stability.
 
 <p align="center">
   <img src="data/Fig_Ctrl_Law.png" width="650" class='center' alt="Quadrotor Chase Simulation" />
