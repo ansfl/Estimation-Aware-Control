@@ -17,7 +17,7 @@ Our proposed [Estimation-Aware](https://arxiv.org/abs/2607.07276) framework aban
 
 To understand why estimation-aware control is necessary, imagine a simple pendulum. We can fully describe its state using just two variables: **angular position** ($\theta$) and **angular rate** ($\dot{\theta}$). 
 
-In an ideal, deterministic world, basic calculus and physics allow us to perfectly predict and capture its behavior over time:
+In an ideal deterministic setting, first-principles physics allows us to perfectly predict system dynamics, subject only to sampling limits:
 
 <table align="center">
   <tr>
