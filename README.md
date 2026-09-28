@@ -96,7 +96,7 @@ By closing the loop on estimation quality, the controller dynamically modulates 
   </tr>
   <tr>
     <td align="center">
-      <img src="data/Coord_Untuned.gif" width="600" alt="Nominal Coordinated Turn" />
+      <img src="data/Coord_Untuned.gif" width="600" alt="Nominal Coordinated Turn" style="background-color: white;"/>
       <br />
       <sub><b>Nominal</b></sub>
     </td>
@@ -116,7 +116,7 @@ bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
   </tr>
   <tr>
     <td align="center">
-      <img src="data/Quad_Level_Untuned.gif" width="600" alt="Nominal Coordinated Turn" />
+      <img src="data/Quad_Level_Untuned.gif" width="600" alt="Nominal Coordinated Turn" style="background-color: white;"/>
       <br />
       <sub><b>Nominal</b></sub>
     </td>
