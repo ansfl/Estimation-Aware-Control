@@ -91,12 +91,12 @@ Below, a direct comparison in straight-and-level flight illustrates how the nomi
 <table align="center">
   <tr>
     <td align="center" style="background-color: white;">
-      <img src="data/Quad_Level_Untuned.gif" width="450" alt="Nominal Coordinated Turn" />
+      <img src="data/Quad_Level_Untuned.gif" width="400" alt="Nominal Coordinated Turn" />
       <br />
       <sub><b>Nominal</b></sub>
     </td>
     <td align="center" style="background-color: white;">
-      <img src="data/Quad_Level_Tuned.gif" width="450" alt="EA Coordinated Turn" />
+      <img src="data/Quad_Level_Tuned.gif" width="400" alt="EA Coordinated Turn" />
       <br />
       <sub><b>EA-based</b></sub>
     </td>
