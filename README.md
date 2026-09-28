@@ -86,7 +86,7 @@ Here, we apply this framework to an incremental nonlinear dynamic inversion (IND
 
 By closing the loop on estimation quality, the controller modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening response as confidence is restored. This yields lower overall control effort with reduced kinematic drift.
 
-Below, a direct comparison in straight-and-level flight illustrates how the EA-based controller maintains trajectory tracking, whereas the nominal baseline quickly drifts:
+Below, a direct comparison in straight-and-level flight illustrates how the nominal baseline quickly drifts (left), whereas the EA-based controller maintains trajectory tracking:
 
 <table align="center">
   <tr>
@@ -103,7 +103,7 @@ Below, a direct comparison in straight-and-level flight illustrates how the EA-b
   </tr>
 </table>
 
-Similarly, during a coordinated turn, the baseline accumulates tracking errors from unmodeled disturbances, while the EA-based controller consistently adheres to the circular reference path throughout the maneuver:
+Similarly, during a coordinated turn, the baseline accumulates tracking errors from unmodeled disturbances, while the EA-based controller (right) consistently adheres to the circular reference path throughout the maneuver:
 
 <table align="center">
   <tr>
