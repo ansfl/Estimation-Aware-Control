@@ -91,14 +91,14 @@ Below, a direct comparison in straight-and-level flight illustrates how the EA-b
 <table align="center">
   <tr>
     <td align="center" style="background-color: white;">
-      <img src="data/Quad_Level_Tuned.gif" width="380" alt="EA Coordinated Turn" />
-      <br />
-      <sub><b>EA-based</b></sub>
-    </td>
-    <td align="center" style="background-color: white;">
       <img src="data/Quad_Level_Untuned.gif" width="380" alt="Nominal Coordinated Turn" />
       <br />
       <sub><b>Nominal</b></sub>
+    </td>
+    <td align="center" style="background-color: white;">
+      <img src="data/Quad_Level_Tuned.gif" width="380" alt="EA Coordinated Turn" />
+      <br />
+      <sub><b>EA-based</b></sub>
     </td>
   </tr>
 </table>
@@ -108,14 +108,14 @@ Similarly, during a coordinated turn, the baseline accumulates tracking errors f
 <table align="center">
   <tr>
     <td align="center" style="background-color: white;">
-      <img src="data/Coord_Tuned_px.gif" width="380" alt="EA Coordinated Turn" />
-      <br />
-      <sub><b>EA-based</b></sub>
-    </td>
-    <td align="center" style="background-color: white;">
       <img src="data/Coord_Untuned.gif" width="380" alt="Nominal Coordinated Turn" />
       <br />
       <sub><b>Nominal</b></sub>
+    </td>
+    <td align="center" style="background-color: white;">
+      <img src="data/Coord_Tuned_px.gif" width="380" alt="EA Coordinated Turn" />
+      <br />
+      <sub><b>EA-based</b></sub>
     </td>
   </tr>
 </table>
