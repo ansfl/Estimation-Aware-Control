@@ -86,9 +86,20 @@ In this work, we apply this framework to an incremental nonlinear dynamic invers
 
 By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
 
-<p align="center">
-  <img src="data/Quad_Chase_1.gif" width="825" class='center' alt="Quadrotor Chase Simulation" />
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="data/Coord_Tuned_px.gif" width="400" alt="EA Coordinated Turn" />
+      <br />
+      <sub><b>Ideal Pendulum Motion</b></sub>
+    </td>
+    <td align="center">
+      <img src="data/Coord_Untuned_px.gif" width="350" alt="Nominal Coordinated Turn" />
+      <br />
+      <sub><b>Deterministic State Evolution</b></sub>
+    </td>
+  </tr>
+</table>
 
 ## Code
 
