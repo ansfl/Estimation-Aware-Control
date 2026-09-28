@@ -91,12 +91,14 @@ By closing the loop on estimation quality, the controller dynamically modulates 
     <td align="center">
       <img src="data/Coord_Tuned_px.gif" width="400" alt="EA Coordinated Turn" />
       <br />
-      <sub><b>Ideal Pendulum Motion</b></sub>
+      <sub><b>EA-based</b></sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
-      <img src="data/Coord_Untuned_px.gif" width="350" alt="Nominal Coordinated Turn" />
+      <img src="data/Coord_Untuned.gif" width="400" alt="Nominal Coordinated Turn" />
       <br />
-      <sub><b>Deterministic State Evolution</b></sub>
+      <sub><b>Nominal</b></sub>
     </td>
   </tr>
 </table>
