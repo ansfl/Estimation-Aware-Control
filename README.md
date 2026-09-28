@@ -89,6 +89,23 @@ By closing the loop on estimation quality, the controller dynamically modulates 
 <table align="center">
   <tr>
     <td align="center" style="background-color: white;">
+      <img src="data/Quad_Level_Tuned.gif" width="380" alt="EA Coordinated Turn" />
+      <br />
+      <sub><b>EA-based</b></sub>
+    </td>
+    <td align="center" style="background-color: white;">
+      <img src="data/Quad_Level_Untuned.gif" width="380" alt="Nominal Coordinated Turn" />
+      <br />
+      <sub><b>Nominal</b></sub>
+    </td>
+  </tr>
+</table>
+
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+
+<table align="center">
+  <tr>
+    <td align="center" style="background-color: white;">
       <img src="data/Coord_Tuned_px.gif" width="380" alt="EA Coordinated Turn" />
       <br />
       <sub><b>EA-based</b></sub>
@@ -101,25 +118,6 @@ By closing the loop on estimation quality, the controller dynamically modulates 
   </tr>
 </table>
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-
-
-<table align="center">
-  <tr>
-    <td align="center" style="background-color: white;">
-      <img src="data/Coord_Tuned_px.gif" width="400" alt="EA Coordinated Turn" />
-      <br />
-      <sub><b>EA-based</b> (Duration: 2.2s)</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" style="background-color: white;">
-      <img src="data/Coord_Untuned.gif" width="400" alt="Nominal Coordinated Turn" />
-      <br />
-      <sub><b>Nominal</b> (Duration: 2.2s)</sub>
-    </td>
-  </tr>
-</table>
 
 ## Code
 
