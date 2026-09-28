@@ -103,6 +103,26 @@ By closing the loop on estimation quality, the controller dynamically modulates 
   </tr>
 </table>
 
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="data/Quad_Level_Tuned.gif" width="600" alt="EA Coordinated Turn" />
+      <br />
+      <sub><b>EA-based</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="data/Quad_Level_Untuned.gif" width="600" alt="Nominal Coordinated Turn" />
+      <br />
+      <sub><b>Nominal</b></sub>
+    </td>
+  </tr>
+</table>
+
 ## Code
 
 The code can be implemented using MATLAB R2022b or any later releases, and is organized as follows :
