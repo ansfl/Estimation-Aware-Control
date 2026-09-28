@@ -76,15 +76,17 @@ Achieving marginal stability under these conditions is notoriously difficult. It
 ---
 
 ### The Solution: Estimation-Aware Control
-Rather than relying on manual tuning, our framework feeds real-time estimation uncertainty—quantified via covariance—directly back into the control loop. Agnostic to the control design, this paradigm structurally regularizes the control action to respect the estimator's "blindness" within the feasible space.
+Rather than relying on manual tuning, our framework feeds real-time estimation uncertainty—quantified via covariance—directly back into the control loop. Agnostic to the underlying control design, this paradigm structurally regularizes control action to respect the estimator's "blindness" within the feasible state space.
 
-In this work, we apply this framework to an incremental nonlinear dynamic inversion (INDI) control law (1, blue), which computes a control increment at step $k$ (2, magenta) augmented by our Estimation-Aware (EA) term (3, orange). This term maps the covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator (4, green) that dynamically attenuates or cross-projects $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee stability.
+Here, we apply this framework to an incremental nonlinear dynamic inversion (INDI) controller (1, blue), augmenting the step increment $\Delta\boldsymbol{u}_k$ (2, magenta) with an Estimation-Aware (EA) term (3, orange). This term maps the covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator (4, green) that dynamically attenuates or cross-projects state estimates $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee closed-loop stability.
 
 <p align="center">
   <img src="data/Fig_Ctrl_Law.png" width="650" class='center' alt="Quadrotor Chase Simulation" />
 </p>
 
-By closing the loop on estimation quality, the controller dynamically modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening its response when confidence is restored. This mathematically guarantees stability and robustness, even in the presence of severe state drift and unmodeled disturbances.
+By closing the loop on estimation quality, the controller modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening response as confidence is restored. This yields lower overall control effort with reduced kinematic drift.
+
+Below, a direct comparison in straight-and-level flight illustrates how the EA-based controller maintains trajectory tracking, whereas the nominal baseline quickly drifts:
 
 <table align="center">
   <tr>
@@ -101,7 +103,7 @@ By closing the loop on estimation quality, the controller dynamically modulates 
   </tr>
 </table>
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+Similarly, during a coordinated turn, the baseline accumulates tracking errors from unmodeled disturbances, while the EA-based controller consistently adheres to the circular reference path throughout the maneuver:
 
 <table align="center">
   <tr>
