@@ -149,18 +149,3 @@ File | Purpose
 **f_Runga_Kutta** | 4-th order numerical solver for **f(x_k,u_k)**
 **System_Parameters** | Upload all relevant system parameters
 **u_saturation** | Actuation physical limitations
-
-
-## Citation
-
-If you find this repository useful, please consider giving it a star ⭐ and citing our article :
-```
-@article{engelsman2026revisiting,
-  title={Revisiting Certainty Equivalence: The Structural Coupling Between Estimation and Control in Underactuated Nonlinear Systems},
-  author={Engelsman, Daniel and Klein, Itzik},
-  journal={arXiv preprint arXiv:2607.07276},
-  year={2026}
-}
-```
-
-[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=70/>](https://arxiv.org/abs/2607.07276)
