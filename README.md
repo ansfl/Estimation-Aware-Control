@@ -81,7 +81,7 @@ Rather than relying on manual tuning, our framework feeds real-time estimation u
 Here, we apply this framework to an incremental nonlinear dynamic inversion (INDI) controller (1, blue), augmenting the step increment $\Delta\boldsymbol{u}_k$ (2, magenta) with an Estimation-Aware (EA) term (3, orange). This term maps the covariance matrix $\boldsymbol{\Sigma}_k$ into an uncertainty-gated operator (4, green) that dynamically attenuates or cross-projects state estimates $\dot{\hat{\boldsymbol{x}}}_k$ to guarantee closed-loop stability.
 
 <p align="center">
-  <img src="data/Fig_Ctrl_Law.png" width="650" class='center' alt="Quadrotor Chase Simulation" />
+  <img src="data/Fig_Ctrl_Law_new.png" width="650" class='center' alt="Estimation-Awareness EoM" />
 </p>
 
 By closing the loop on estimation quality, the controller modulates its aggressiveness—softening control effort during high uncertainty to prevent self-excitation, and sharpening response as confidence is restored. This yields lower overall control effort with reduced kinematic drift.
