@@ -5,7 +5,7 @@
 ### Introduction
 Traditional control architectures rely heavily on the **Certainty Equivalence (CE)** principle, which cleanly separates state estimation from control design. While this decoupling works beautifully in ideal linear systems, it quickly breaks down during aggressive maneuvers and under severe disturbances. 
 
-Our proposed [Estimation-Aware](https://arxiv.org/abs/2607.07276) framework abandons the "blind" CE assumption. By actively embedding estimation quality (uncertainty) directly into the feedback law, we structurally decouple and isolate estimation-induced feedback loops. Compared to the nominal baseline (brown), the EA framework (green) successfully mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
+Our proposed Estimation-Aware framework abandons the "blind" CE assumption. By actively embedding estimation quality (uncertainty) directly into the feedback law, we structurally decouple and isolate estimation-induced feedback loops. Compared to the nominal baseline (brown), the EA framework (green) successfully mitigates severe cross-coupling and prevents catastrophic divergence under unmodeled disturbances.
 
 <p align="center">
   <img src="data/Quad_Chase_2.gif" width="825" class='center' alt="Quadrotor Chase Simulation" />
@@ -149,3 +149,24 @@ File | Purpose
 **f_Runga_Kutta** | 4-th order numerical solver for **f(x_k,u_k)**
 **System_Parameters** | Upload all relevant system parameters
 **u_saturation** | Actuation physical limitations
+
+## Citation
+
+The authors would appreciate it if you starred our repository and cited either of our articles:
+```
+@article{engelsman2026revisiting,
+      title={Revisiting Certainty Equivalence: The Structural Coupling Between Estimation and Control in Underactuated Nonlinear Systems}, 
+      author={Daniel Engelsman and Itzik Klein},
+      year={2026},
+      eprint={2607.07276},
+      url={https://arxiv.org/abs/2607.07276}, 
+}
+
+@article{engelsman2026ea,
+      title={Estimation-Aware Control on Quadrotor State Manifolds via Anisotropic Covariance Filtering}, 
+      author={Daniel Engelsman and Itzik Klein},
+      year={2026},
+      eprint={2607.07276},
+      url={https://arxiv.org/abs/2607.07276}, 
+}
+```
